@@ -1,0 +1,16 @@
+body{
+    border:5px pink solid;
+    display:flow-root;
+}
+#img1{
+    float:left;
+    margin-right:10px;
+    height:150px;
+}
+
+#img2{
+    float:right;
+    margin-left:10px;
+    height:120px;
+}
+ 

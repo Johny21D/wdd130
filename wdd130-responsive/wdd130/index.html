@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The <head> section contains information *about* the page, not shown on the webpage itself -->
+    <meta charset="UTF-8"> <!-- Sets character encoding (for text display, supports special symbols) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile -->
+    <title>Johny Portal Page</title> <!-- Title shown on the browser tab -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Links your external CSS file for styling -->
+</head>
+
+<body>
+    <!-- The main container that wraps all content -->
+    <div id="wrapper">
+
+        <!-- HEADER: Usually contains the logo, page title, or main site name -->
+        <header>
+            <img src="images/logo.png" alt="Johny Portal Logo"> <!-- Website logo image -->
+            <h1>Johny Portal Page</h1> <!-- Main heading of the page -->
+        </header>
+
+        <!-- NAVIGATION BAR: Links to other pages or sections of your site -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice.html/"></a>
+            <a href="aboutme.html"></a>
+        </nav>
+
+        <!-- MAIN CONTENT AREA: Holds the main information of the page -->
+        <main>
+
+            <!-- SECTION 1 (Left column): Shows an image and short text about WWR Dragons -->
+            <section class="col_left">
+                <img src="images/wwr_dragons.png" alt="Rafting Dragons having fun">
+                <p>Built haven faint of heart Bludvists responsibility sail drowning Dragos liberate mutiny.</p>
+            </section>
+
+            <!-- SECTION 2 (Right column): Another content block with image and description -->
+            <section class="col_right">
+                <img src="images/ice_elf.png" alt="Cold magically elf">
+                <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.</p>
+            </section>
+
+            <!-- SECTION 3 (Left column again): Hobbit project image and description -->
+            <section class="col_left">
+                <img src="images/hobbit_project.png" alt="Helpful Hobbits">
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow</p>
+            </section>
+
+            <!-- SECTION 4 (Right column, vertical layout): Clickable image linking to another page -->
+            <section class="vert col_right">
+                <!-- Clicking this image takes you to aboutme.html -->
+                <a href="aboutme.html">
+                    <img src="images/elvey.png" alt="Alvey the elf">
+                </a>
+                <p>Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.</p>
+            </section>
+
+            <!-- SECTION 5: A form for users to enter personal information -->
+            <section id="ads">
+                <form>
+                    <!-- Label and text box for first name -->
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>
+
+                    <!-- Label and text box for last name -->
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required>
+
+                    <!-- Label and input for email address -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Radio buttons for gender selection -->
+                    <label>Gender</label>
+                    <div>
+                        Male <input type="radio" name="gender" value="male" required> 
+                        Female <input type="radio" name="gender" value="female">
+                    </div>
+
+                    <!-- Dropdown list for selecting country -->
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="" selected disabled>Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="de">Germany</option>
+                        <option value="in">India</option>
+                        <option value="jp">Japan</option>
+                    </select>
+
+                    <!-- Checkboxes: allow multiple fantasy creatures to be selected -->
+                    <legend>Fantasy Creatures</legend>
+                    <div>
+                        <input type="checkbox" name="creatures[]" value="dragons">
+                        <label>Dragons</label><br>
+                        <input type="checkbox" name="creatures[]" value="elves">
+                        <label>Elves</label><br>
+                        <input type="checkbox" name="creatures[]" value="hobbits">
+                        <label>Hobbits</label><br>
+                    </div>
+
+                    <!-- Textarea: for users to write any extra notes -->
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" rows="4" cols="4" placeholder="Anything else you'd like to add?"></textarea>
+
+                    <!-- Submit button: sends form data when clicked -->
+                    <button id="sb" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- FOOTER: Appears at the bottom of the page; contains repeat navigation and copyright -->
+        <footer>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">WWR</a></li>
+                <li><a href="#">ICE</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+            <p>Copyright 2025 &copy;</p>
+        </footer>
+    </div> <!-- End of wrapper -->
+</body>
+
+</html>

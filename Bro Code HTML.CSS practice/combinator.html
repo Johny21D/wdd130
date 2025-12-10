@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator </title>
+    <!--
+        Combinator=explains the relationship between listed selector
+              = descendant
+            > = child
+            ~ =general sibling 
+            + =adjacent sibling
+            -->
+    <style>
+        #container{
+            border: 3px solid;
+        }
+
+        #container  p{
+            background-color:palevioletred
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p>
+        </div>
+    </div>
+
+</body>
+    <p>This is #4</p>
+    <p>This is #5</p>
+</html>

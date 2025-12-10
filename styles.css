@@ -1,0 +1,96 @@
+/* Reset browser defaults */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbfb; /* Light background */
+}
+
+/* Container max width and centering */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Centering */
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+/* Background container */
+#background {
+    height: 725px;
+    background-color: #d57bbd; /* Example color, adjust to your palette */
+}
+
+/* Background colors */
+header {
+    background-color: rgba(20, 30, 13, 0.7);
+}
+nav a:hover {
+    background-color: black;
+}
+.book, .join {
+    background-color: #bd4896;
+    color: white;
+}
+.book:hover, .join:hover {
+    background-color: #2a4e68;
+    color: #d9c2a3;
+}
+.msg {
+    background-color: #6f7364;
+    color: white;
+}
+footer {
+    background-color: #333;
+    color: white;
+}
+
+/* Foreground text colors */
+nav a {
+    color: #fcfbfb;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #d9c2a3;
+}
+.home-title {
+    color: #333;
+}
+h4 {
+    color: #666;
+}
+.msg h2 {
+    color: #fff;
+}
+.msg p {
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #d9c2a3;
+    text-decoration: underline;
+}
+
+/* Widths */
+.logo {
+    width: 80px;
+}
+.icon {
+    width: 80px;
+}
+#hero-img {
+    width: 100%;
+}
+
+/* Footer text size */
+footer p {
+    font-size: 1.2em;
+}

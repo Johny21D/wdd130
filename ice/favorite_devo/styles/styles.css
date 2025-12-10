@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100%;
+  
+  background: linear-gradient(to bottom, #555656, #1d74ca);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(115, 7, 198);
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #c85a0655;
+}
+
+.content-box {
+  background-color: rgb(255, 255, 255);
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 10px 5px 10px rgb(194, 0, 187);
+  min-height: 400px;
+}
+
+ .content-box {
+      position: relative;
+      min-height: 600px; /* adjust as needed */
+      padding-bottom: 150px; /* makes room for the form */
+}
+
+.thead{
+  background-color: #1d74ca;
+}
+.box {
+      width: 200px;           /* box width */
+      height: 260px;          /* box height */
+      background-color: rgb(148, 234, 255);  /* box color */
+      border: 3px solid rgba(0, 0, 0, 0.31); /* border around the box */
+      border-radius: 10px;    /* rounded corners */
+      padding: 10px;          /* space inside the box */
+      margin: 20px;           /* space outside the box */
+      text-align: left;
+}
+td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+th:nth-child(odd),th:nth-child(even){
+  background-color: #c2951b;
+}
+td:nth-child(odd) {
+  background-color: #aaf6a7;
+}

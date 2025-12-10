@@ -1,0 +1,279 @@
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #483a3a; 
+    color: #f0f0f0; 
+    line-height: 1.6;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content:  flex-start;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 0px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    width:200px;
+   height: 200px;
+   border-radius: 50%;
+   object-fit:cover
+}
+
+nav {
+  display: flex;
+  gap: 230px;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+
+nav a:hover {
+    color: #00ff88; 
+}
+
+
+#hero-msg {
+    text-align: center;
+    background: url('images/hero-bg.jpg') center/cover no-repeat; 
+    padding: 120px 20px;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3rem;
+    color: #00ff88;
+    text-shadow: 2px 2px 10px #000;
+}
+
+#hero-msg h4 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.button-box {
+    margin-top: 25px;
+}
+
+.book {
+    background-color: #00ff88;
+    color: #111;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.book:hover {
+    background-color: #fff;
+    color: #00cc66;
+    transform: scale(1.05);
+}
+
+/* Connects to <main class="home-grid"> */
+.home-grid { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* styles shared by all three cards */
+.arena-card,
+.team-card,
+.msg-box {
+    /* appearance styles from your previous snippets */
+    background-color: #451240; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    color: #000000; /* Set text color for readability against the dark background */
+}
+
+.arena-card {
+    /* Resizes the entire card container */
+    width: 700px; 
+    height: 500px; 
+    margin-top: 40px; /* Example: pushes the card down */
+    margin-bottom: 30px; 
+    margin-right: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    overflow: hidden; /* Ensures contents stay within the card bounds */
+}
+
+.arena-card img {
+   width: 80%; 
+    height: 80%; 
+    object-fit: cover; 
+    display: block; 
+
+    /* FIX: Remove the space between '20' and 'px' */
+    margin: 20px auto; 
+}
+
+.arena-card h2 {
+    /* The heading is displayed in the remaining 30% vertical space */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.team-card {
+    /* Resizes the entire card container */
+    width: 600px; 
+    height: 600px; 
+    
+    /* Your existing margin and appearance styles */
+    margin-top: 600px; /* Example: pushes the card down */
+    margin-bottom: 30px; 
+    margin-right: 20px; 
+    background-color: #ffffff; /* From your previous CSS */
+    border-radius: 8px; /* From your previous CSS */
+    overflow: hidden; /* Ensures contents stay within the card bounds */
+}
+
+.team-card img {
+    width: 80%; 
+    height: 75%; 
+    object-fit: cover; 
+    display: block; 
+    margin: 40px auto; 
+}
+
+.team-card h2 {
+    /* The heading is displayed in the remaining 30% vertical space */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* You might also want to center the text horizontally if it's not already */
+    text-align: center;
+}
+
+.info-card {
+    /* 1. Sizing and Layout */
+    width: 325px; 
+    height: 300px; 
+    margin-top: -500px;       
+    /* Horizontal movement to the LEFT */
+    margin-left: -200px;    
+    /* 3. Appearance (Kept as is) */
+    background-color: #993333; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    color: #f0f0f0; 
+    padding: 20px; 
+}
+
+.info-card h3 {
+    text-align: center;      /* Center the heading */
+    margin-bottom: 15px;     /* Space below the heading */
+}
+
+.info-card p {
+    font-size: 1em;          /* Standard paragraph size */
+    line-height: 1.5;        /* Improves readability for blocks of text */
+    margin: 0;               /* Remove default top/bottom margin */
+    text-align: left;        /* Align the paragraph text to the left */
+}
+
+.msg-box {
+    /* Resizes the entire card container */
+    width: 1500px; 
+    height: 600px; 
+    
+    /* Your existing margin and appearance styles */
+    margin-top: 120px; /* Example: pushes the card down */
+    margin-bottom: 30px; 
+    margin-right: 0px; 
+    background-color: #fbfbfb; /* From your previous CSS */
+    border-radius: 8px; /* From your previous CSS */
+    overflow: hidden; /* Ensures contents stay within the card bounds */
+}
+
+.msg-box img {
+    /* Image size properties */
+    width: 80%; 
+    height: 80%; 
+    object-fit: cover; 
+    display: block; 
+    margin: 40px auto; 
+}
+
+.msg-box h2 {
+    /* REMOVE the relative positioning, as it should flow naturally now */
+    position: static; 
+    bottom: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+footer {
+  background-color: #000000; /* Deep blue tone */
+  color: #fff;
+  text-align: center;
+  padding: 25px 10px;
+  border-top: 4px solid #ffb703;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #ffb703;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffd166;
+  transform: scale(1.05);
+}
+
+footer .social {
+  margin-top: 15px;
+}
+
+footer .social a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .social img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .social img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}

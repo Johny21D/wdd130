@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soft Ball Gun Game Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #9d2553;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === HEADER === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #000000;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    width:150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit:cover
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f9d71c;
+}
+
+#hero-msg {
+    text-align: center;
+    padding: 120px 20px 60px;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #482626;
+}
+
+.home-title {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero-msg h4 {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+.button-box .book {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #f9d71c;
+    color: #0a2a66;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-box .book:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+subpage {
+    text-align: center;       /* Center content */
+    margin: 40px auto;        /* Space above/below and center horizontally */
+}
+
+#subpage img {
+    width: 500px;
+    height: 400;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#subpage img:hover {
+    transform: scale(1.05);   /* Slight zoom */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.greenTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.greenTable th, .greenTable td {
+    border: 1px solid #0a2a66;
+    padding: 12px;
+    text-align: center;
+}
+
+.greenTable th {
+    background-color: #0a2a66;
+    color: #f9d71c; 
+}
+
+
+.greenTable td {
+    background-color: #1f430c; 
+    color: #fff;
+}
+
+</style>
+<body>
+  <div id="content">
+
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Dog in soldier colthes">
+            </a>
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="#">wwr</a>
+              <a href="#">about me</a>
+              <a href="../WWD 130/ice/index.html">ice</a>
+            </nav>
+        </header>
+
+<main class="home-grid">
+     <div id="subpage">
+                <h1>About Johny Suy</h1>
+                <img src="../images/AOT.jpg" alt="Attack on Titan" width="250">
+                <h2>Favorite things</h2>
+                <table class="greenTable">
+                    <thead>
+                        <tr>
+                            <th>Color</th>
+                            <th>Movie</th>
+                            <th>Food</th>
+                            <th>Sport</th>
+                
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td>Black</td>
+                            <td>George Washignton</td>
+                            <td>Burger</td>
+                            <td>Soccer</td>
+                        </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+
+</section>
+
+    </main>
+
+    <footer>
+      <p>Soft Ball Gun Game Web &copy; 2025 - Johny Suy</p>
+      <p><a href="#">Site Plan</a></p>
+      <p><a href="#">Contact Us</a></p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="Twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram icon">
+        </a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

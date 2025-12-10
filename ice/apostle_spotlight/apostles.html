@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+body {
+    background-color: #e8ecde;
+}
+
+/* Jesus image */
+.Jesus-Christ {
+    width: 1200px;
+    height: 850px;
+    border: 10px solid black;
+    border-radius: 60px;
+    display: block;
+    margin-left: 150px;
+}
+
+#wrapper h1 {
+    position: absolute;
+    top: 20px; /* adjust vertical position */
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    z-index: 2; /* ensures headline is on top of image */
+}
+
+#wrapper h2 {
+    position: absolute;
+    top: 350px; /* adjust to sit above apostles */
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    z-index: 2;
+}
+/* President Nelson */
+.president-nelson {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid#ffff;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 100px;
+    left: 675px;
+}
+.president-nelson img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Elder Oaks */
+.elder-oaks {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid#ffff;
+    position: absolute;
+    top: 220px;
+    left: 530px;
+}
+.elder-oaks img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Elder Eyring */
+.elder-eyring {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid#ffff;
+    position: absolute;
+    top: 220px;
+    left: 840px;
+}
+.elder-eyring img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.elder-Holland {
+    width: 105px;
+    height: 16%;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid#ffff;
+    position: absolute;
+    top: 400px;
+    left: 480px;
+}
+.elder-Holland img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.elder-Uchtdorf {
+    width: 105px;
+    height: 16%;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid#ffff;
+    position: absolute;
+    top: 400px;
+    left: 625px;
+}
+.elder-Uchtdorf img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.elder-Bednar {
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:400px;
+    left: 770px;
+}
+.elder-Bednar img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+}
+
+.elder-Cook {
+    width:105px;
+    height:16%;
+    border-radius: 50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:400px;
+    left:915px;
+}
+
+.elder-Cook img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    display:block;
+}
+
+.elder-Christofferson{
+    width:105px;
+    height:16%;
+    border-radius: 50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:560px;
+    left:480px;
+}
+.elder-Christofferson img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.elder-Anderson{
+    width:105px;
+    height:16%;
+    border-radius: 50%;
+    overflow:hidden;
+    border:10px solid #ffff;
+    position:absolute;
+    top:560px;
+    left:625px;
+}
+.elder-Anderson img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.elder-Rasband{
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid #ffff;
+    position:absolute;
+    top:560px;
+    left:770px;
+}
+.elder-Rasband img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    display:block;
+}
+
+.elder-Stevenson{
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:560px;
+    left:915px;
+}
+.elder-Stevenson img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+}
+.elder-Runlund{
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid #ffff;
+    position:absolute;
+    top:720px;
+    left:480px;
+}
+
+.elder-Runlund img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.elder-Gong{
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:720px;
+    left:625px;
+}
+
+.elder-Gong img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+
+}
+.elder-Soares{
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:720px;
+    left:770px;
+}
+
+.elder-Soares img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+
+}
+
+.elder-Kearon{
+    width:105px;
+    height:16%;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid#ffff;
+    position:absolute;
+    top:720px;
+    left:915px;
+}
+
+.elder-Kearon img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+}
+
+/* Shared hover effect for all apostles */
+.apostle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.apostle:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.9); /* thicker, more visible shadow */
+}
+
+/* Headline */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>The First Presidency</h1>  
+        <h2>The Quorum of the Twelve Apostles</h2>
+        <div class="Jesus Christ">
+            <img src="images/christus.webp" alt="Jesus Christ" class="Jesus-Christ">
+        </div>
+
+        <div class="president-nelson apostle">
+            <img src="images/nelson.webp" alt="President Nelson">
+        </div>
+
+        <div class="elder-oaks apostle">
+            <img src="images/oaks.webp" alt="Elder Oaks">
+        </div>
+
+        <div class="elder-eyring apostle">
+            <img src="images/eyring.webp" alt="Elder Eyring">
+        </div>
+
+        <div class="elder-Holland apostle">
+            <img src="images/holland.webp" alt="Elder Holland">
+        </div>
+
+        <div class="elder-Uchtdorf apostle">
+            <img src="images/uchtdorf.webp" alt="Elder Uchtdorf">
+        </div>
+
+        <div class="elder-Bednar apostle">
+            <img src="images/bednar.webp" alt="Elder Bednar">
+        </div>
+
+        <div class="elder-Cook apostle">
+            <img src="images/cook.webp" alt="Elder Cook">
+        </div>
+
+        <div class="elder-Christofferson apostle">
+            <img src="images/christofferson.webp" alt="Elder Christofferson">
+        </div>
+
+        <div class="elder-Anderson apostle">
+            <img src="images/anderson.webp" alt="Elder Anderson">
+        </div>
+
+        <div class="elder-Rasband apostle">
+            <img src="images/rasband.webp" alt="Elder Rasband">
+        </div>
+
+        <div class="elder-Stevenson apostle">
+            <img src="images/stevenson.webp" alt="Elder Stevenson">
+        </div>
+
+        <div class="elder-Runlund apostle">
+            <img src="images/renlund.webp" alt="Elder Runlund">
+        </div>
+
+        <div class="elder-Gong apostle">
+            <img src="images/gong.webp" alt="Elder Gong">
+        </div>
+
+        <div class="elder-Soares apostle">
+            <img src="images/soares.webp" alt="Elder Soares">
+        </div>
+
+        <div class="elder-Kearon apostle">
+            <img src="images/kearon.webp" alt="Elder Kearon">
+        </div>
+
+        </div>
+</body>
+</html>
