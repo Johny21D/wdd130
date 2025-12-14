@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Report</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-color: #483a3a;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #222;
+    }
+
+    header img.logo {
+      width:110px;
+      height: 100px;
+      border-radius: 50%;
+
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      gap: 200px;
+      position: relative;
+      right:400px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      color: #ffffff;
+    }
+
+    section {
+      background-color: rgb(116, 9, 44);
+      color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    section p {
+      text-align: center;
+    }
+
+/*Fade Section*/
+
+/* Fade-in animation */
+h1, main section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger delays using nth-of-type */
+  main h1:nth-of-type(1) {
+    animation-delay: 0.3s;
+  }
+  main section:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+
+  main h1:nth-of-type(2) {
+    animation-delay: 0.8s;
+  }
+  main section:nth-of-type(2) {
+    animation-delay: 1s;
+  }
+
+  main h1:nth-of-type(3) {
+    animation-delay: 1.3s;
+  }
+  main section:nth-of-type(3) {
+    animation-delay: 1.5s;
+  }
+
+  main h1:nth-of-type(4) {
+    animation-delay: 1.8s;
+  }
+  main section:nth-of-type(4) {
+    animation-delay: 2s;
+  }
+
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    border-top: 4px solid #ffb703;
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  footer p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  footer a {
+    color: #ffb703;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #ffd166;
+    transform: scale(1.05);
+  }
+
+  footer .social {
+    margin-top: 15px;
+  }
+
+  footer .social a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  footer .social img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  footer .social img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+    <img class="logo" src="images/logo.png" alt="Dog in soldier clothes" />
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="../wwr/index.html">WWR</a>
+    <a href="aboutme.html">About Me</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Client Report</h1>
+  <section>
+    <p>
+      I came up with the content for the site plan after seeing many cooking apps that are free but offer limited access.
+      This inspired me to create a website where people can access recipes from around the world.
+      <br><br>
+      I communicated with my lead developer through Microsoft Teams individual chat. Unfortunately, the developer did not
+      meet my expectations. I never received the portal page link that I requested. Next time, I will make sure to hire
+      people who communicate better and deliver results.
+    </p>
+  </section>
+
+  <h1>Lead Developer</h1>
+  <section>
+    <p>
+      I used Microsoft Teams to create a group chat to communicate with my junior developers, but no one responded.
+      I also sent emails, but I did not receive any replies.
+      <br><br>
+      I communicated with my client using Microsoft Teams, and they did respond. I shared the GitHub webpage link
+      so the client could access the portal page.
+      <br><br>
+      This was my first experience using GitHub. It was interesting to explore and understand how it works.
+    </p>
+  </section>
+
+  <h1>Junior Developer</h1>
+  <section>
+    <p>
+      I worked as a junior developer on two teams. In one team, the lead developer never received a wireframe from
+      the client, so there was no progress.
+      <br><br>
+      In the other team, communication was clear. The lead developer assigned tasks, and each junior developer
+      completed a child page before the deadline.
+      <br><br>
+      I did not encounter any issues using GitHub or making changes.
+    </p>
+  </section>
+
+  <h1>General Experience Report</h1>
+  <section>
+    <p>
+      <strong>Most challenging part:</strong> Communication was the biggest challenge, especially when working as
+      both a client and lead developer. Some team members did not respond or contribute.
+      <br><br>
+      <strong>What I enjoyed most:</strong> Writing code and seeing how design and functionality come together.
+      <br><br>
+      <strong>What I would do differently:</strong> I would be more persistent in communicating with junior developers
+      and ensure tasks are clearly assigned.
+      <br><br>
+      <strong>Confidence:</strong> Yes, I feel more confident working on real-world projects as long as they align
+      with my current coding knowledge.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>
+    Contact Us</a>
+  </p>
+  <div class="social">
+    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+  </div>
+</footer>
+
+</body>
+</html>
